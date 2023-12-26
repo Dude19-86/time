@@ -22,5 +22,5 @@ function updateClock() {
     const hours = now.getHours()
     const minutes = now.getMinutes()
     const seconds = now.getSeconds()
-    clock.textContent = hours + ':' + minutes + ':' + `${seconds < 10 ? '0' + seconds : seconds}`;
+    clock.textContent = hours + ':' + `${minutes < 10 ? '0' + minutes : minutes}` + ':' + `${seconds < 10 ? '0' + seconds : seconds}`;
 }
